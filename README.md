@@ -1,5 +1,7 @@
 # UWP Radial Time Picker Control
 Radial Style TimePicker Control for UWP
+-- available as nuget from [here](https://www.nuget.org/packages/DeanChalk.UWP.TimePicker) --
+
 
 ## How to use in a UWP app
 If you want to include this control in an app, you can look at the sample project for guidance, but essentially the control has the following bindable properties:
