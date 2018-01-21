@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DeanChalk.UWP.TimePicker</id>
+    <version>1.0.0</version>
+    <title>Radial UWP TimePicker Control</title>
+    <authors>Dean Chalk</authors>
+    <owners>Dean Chalk</owners>
+    <licenseUrl>https://github.com/deanchalk/UWPTimePicker/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/deanchalk/UWPTimePicker</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A control library that can be added to any UWP project. There is a single control that allows the developer to add a radial style time picker functionality to their UWP application. </description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>UWP UAP XAML Control Time TimePicker</tags>
+  </metadata>
+  <files>
+     <file src="bin\Release\DeanChalk.UWP.TimePicker.winmd" target="lib\uap10.0"/>
+     <file src="bin\Release\DeanChalk.UWP.TimePicker.pri" target="lib\uap10.0"/>
+     <file src="bin\Release\DeanChalk.UWP.TimePicker.pdb" target="lib\uap10.0"/>
+     <file src="bin\Release\DeanChalk.UWP.TimePicker.xr.xml" target="lib\uap10.0\DeanChalk.UWP.TimePicker"/>
+     <file src="bin\Release\Themes\Generic.xbf" target="lib\uap10.0\DeanChalk.UWP.TimePicker\Themes"/>
+     <file src="Themes\Generic.xaml" target="lib\uap10.0\Themes"/>
+     <file src="DeanChalk.UWP.TimePicker.targets" target="build\uap10.0"/>
+  </files>
+</package>
