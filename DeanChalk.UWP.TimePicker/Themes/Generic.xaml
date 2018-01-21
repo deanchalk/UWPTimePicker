@@ -1,0 +1,166 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DeanChalk.UWP.TimePicker">
+
+    <Style TargetType="local:TimePicker" >
+        <Setter Property="UnSelectedBackgroundBrush" Value="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
+        <Setter Property="UnSelectedForegroundBrush" Value="{StaticResource ApplicationForegroundThemeBrush}"/>
+        <Setter Property="SelectedBackgroundBrush" Value="{StaticResource ApplicationForegroundThemeBrush}"/>
+        <Setter Property="SelectedForegroundBrush" Value="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ApplicationForegroundThemeBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="300"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:TimePicker">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="{TemplateBinding Padding}">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <Canvas Width="599.988" Height="599.988">
+                                <Canvas>
+                                    <Path StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Data="F1 M 566.994,299.494 C 566.994,446.678 447.678,565.994 300.494,565.994 C 153.310,565.994 33.994,446.678 33.994,299.494 C 33.994,152.310 153.310,32.994 300.494,32.994 C 447.678,32.994 566.994,152.310 566.994,299.494 Z" StrokeDashArray="10,6" />
+
+
+                                    <Path StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Data="F1 M 460.394,299.494 C 460.394,387.804 388.804,459.394 300.494,459.394 C 212.184,459.394 140.594,387.804 140.594,299.494 C 140.594,211.184 212.184,139.594 300.494,139.594 C 388.804,139.594 460.394,211.184 460.394,299.494 Z"  StrokeDashArray="3,2" />
+
+
+                                    <Path x:Name="PART_05_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 414.997,100.803 C 398.260,91.140 392.525,69.738 402.188,53.000 C 411.852,36.263 433.254,30.528 449.991,40.192 C 466.729,49.855 472.463,71.257 462.800,87.995 C 453.137,104.732 431.735,110.467 414.997,100.803 Z"/>
+
+
+                                    <Path x:Name="PART_35_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 149.997,559.797 C 133.260,550.133 127.525,528.731 137.188,511.994 C 146.852,495.256 168.254,489.522 184.991,499.185 C 201.729,508.848 207.463,530.251 197.800,546.988 C 188.137,563.725 166.735,569.460 149.997,559.797 Z"/>
+
+
+                                    <Path x:Name="PART_50_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 100.803,184.991 C 91.140,201.729 69.738,207.463 53.000,197.800 C 36.263,188.137 30.528,166.735 40.192,149.997 C 49.855,133.260 71.257,127.525 87.995,137.188 C 104.732,146.852 110.467,168.254 100.803,184.991 Z"/>
+
+
+                                    <Path x:Name="PART_20_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 559.797,449.991 C 550.133,466.729 528.731,472.463 511.994,462.800 C 495.256,453.137 489.522,431.735 499.185,414.997 C 508.848,398.260 530.251,392.525 546.988,402.188 C 563.725,411.852 569.460,433.254 559.797,449.991 Z"/>
+
+
+                                    <Path x:Name="PART_00_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 299.994,69.988 C 280.667,69.988 265.000,54.321 265.000,34.994 C 265.000,15.667 280.667,-0.000 299.994,-0.000 C 319.321,-0.000 334.988,15.667 334.988,34.994 C 334.988,54.321 319.321,69.988 299.994,69.988 Z"/>
+
+
+                                    <Path x:Name="PART_30_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 299.994,599.988 C 280.667,599.988 265.000,584.321 265.000,564.994 C 265.000,545.667 280.667,530.000 299.994,530.000 C 319.321,530.000 334.988,545.667 334.988,564.994 C 334.988,584.321 319.321,599.988 299.994,599.988 Z"/>
+
+
+                                    <Path x:Name="PART_45_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 69.988,299.994 C 69.988,319.321 54.321,334.988 34.994,334.988 C 15.667,334.988 -0.000,319.321 -0.000,299.994 C -0.000,280.667 15.667,265.000 34.994,265.000 C 54.321,265.000 69.988,280.667 69.988,299.994 Z"/>
+
+
+                                    <Path x:Name="PART_15_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 599.988,299.994 C 599.988,319.321 584.321,334.988 564.994,334.988 C 545.667,334.988 530.000,319.321 530.000,299.994 C 530.000,280.667 545.667,265.000 564.994,265.000 C 584.321,265.000 599.988,280.667 599.988,299.994 Z"/>
+
+
+                                    <Path x:Name="PART_55_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 184.991,100.803 C 168.254,110.467 146.852,104.732 137.188,87.995 C 127.525,71.257 133.260,49.855 149.997,40.192 C 166.735,30.528 188.137,36.263 197.800,53.000 C 207.463,69.738 201.729,91.140 184.991,100.803 Z"/>
+
+
+                                    <Path x:Name="PART_25_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 449.991,559.797 C 433.254,569.460 411.852,563.725 402.188,546.988 C 392.525,530.251 398.260,508.848 414.997,499.185 C 431.735,489.522 453.137,495.256 462.800,511.994 C 472.463,528.731 466.729,550.133 449.991,559.797 Z"/>
+
+
+                                    <Path x:Name="PART_40_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 100.803,414.997 C 110.467,431.735 104.732,453.137 87.995,462.800 C 71.257,472.463 49.855,466.729 40.192,449.991 C 30.528,433.254 36.263,411.852 53.000,402.188 C 69.738,392.525 91.140,398.260 100.803,414.997 Z"/>
+
+
+                                    <Path x:Name="PART_10_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 559.797,149.997 C 569.460,166.735 563.725,188.137 546.988,197.800 C 530.251,207.463 508.848,201.729 499.185,184.991 C 489.522,168.254 495.256,146.852 511.994,137.188 C 528.731,127.525 550.133,133.260 559.797,149.997 Z"/>
+
+
+                                    <Path x:Name="PART_12i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 299.994,175.994 C 280.664,175.994 264.994,160.324 264.994,140.994 C 264.994,121.664 280.664,105.994 299.994,105.994 C 319.324,105.994 334.994,121.664 334.994,140.994 C 334.994,160.324 319.324,175.994 299.994,175.994 Z"/>
+
+
+                                    <Path x:Name="PART_6i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 299.994,493.994 C 280.664,493.994 264.994,478.324 264.994,458.994 C 264.994,439.664 280.664,423.994 299.994,423.994 C 319.324,423.994 334.994,439.664 334.994,458.994 C 334.994,478.324 319.324,493.994 299.994,493.994 Z"/>
+
+
+                                    <Path x:Name="PART_9i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 175.994,299.994 C 175.994,319.324 160.324,334.994 140.994,334.994 C 121.664,334.994 105.994,319.324 105.994,299.994 C 105.994,280.664 121.664,264.994 140.994,264.994 C 160.324,264.994 175.994,280.664 175.994,299.994 Z"/>
+
+
+                                    <Path x:Name="PART_3i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 493.994,299.994 C 493.994,319.324 478.324,334.994 458.994,334.994 C 439.664,334.994 423.994,319.324 423.994,299.994 C 423.994,280.664 439.664,264.994 458.994,264.994 C 478.324,264.994 493.994,280.664 493.994,299.994 Z"/>
+
+
+                                    <Path x:Name="PART_11i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 237.994,192.607 C 221.254,202.272 199.848,196.536 190.183,179.796 C 180.518,163.056 186.254,141.650 202.994,131.985 C 219.734,122.320 241.140,128.056 250.805,144.796 C 260.470,161.536 254.734,182.942 237.994,192.607 Z"/>
+
+
+                                    <Path x:Name="PART_5i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 396.994,468.003 C 380.254,477.668 358.848,471.932 349.183,455.192 C 339.518,438.452 345.254,417.046 361.994,407.381 C 378.734,397.716 400.140,403.452 409.805,420.192 C 419.470,436.932 413.734,458.338 396.994,468.003 Z"/>
+
+
+                                    <Path x:Name="PART_8i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 192.607,361.994 C 202.272,378.734 196.536,400.140 179.796,409.805 C 163.056,419.470 141.650,413.734 131.985,396.994 C 122.320,380.254 128.056,358.848 144.796,349.183 C 161.536,339.518 182.942,345.254 192.607,361.994 Z"/>
+
+
+                                    <Path x:Name="PART_2i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 468.003,202.994 C 477.668,219.734 471.932,241.140 455.192,250.805 C 438.452,260.470 417.046,254.734 407.381,237.994 C 397.716,221.254 403.452,199.848 420.192,190.183 C 436.932,180.518 458.338,186.254 468.003,202.994 Z"/>
+
+
+                                    <Path x:Name="PART_10i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 192.607,237.994 C 182.942,254.734 161.536,260.470 144.796,250.805 C 128.056,241.140 122.320,219.734 131.985,202.994 C 141.650,186.254 163.056,180.518 179.796,190.183 C 196.536,199.848 202.272,221.254 192.607,237.994 Z"/>
+
+
+                                    <Path x:Name="PART_4i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 468.003,396.994 C 458.338,413.734 436.932,419.470 420.192,409.805 C 403.452,400.140 397.716,378.734 407.381,361.994 C 417.046,345.254 438.452,339.518 455.192,349.183 C 471.932,358.848 477.668,380.254 468.003,396.994 Z"/>
+
+
+                                    <Path x:Name="PART_7i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 237.994,407.381 C 254.734,417.046 260.470,438.452 250.805,455.192 C 241.140,471.932 219.734,477.668 202.994,468.003 C 186.254,458.338 180.518,436.932 190.183,420.192 C 199.848,403.452 221.254,397.716 237.994,407.381 Z"/>
+
+
+                                    <Path x:Name="PART_1i_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding UnSelectedBackgroundBrush}" Data="F1 M 396.994,131.985 C 413.734,141.650 419.470,163.056 409.805,179.796 C 400.140,196.536 378.734,202.272 361.994,192.607 C 345.254,182.942 339.518,161.536 349.183,144.796 C 358.848,128.056 380.254,122.320 396.994,131.985 Z"/>
+
+                                    <Path x:Name="PART_AMPM_Back" StrokeThickness="1.0" Stroke="{TemplateBinding UnSelectedForegroundBrush}" StrokeMiterLimit="1.0" Fill="{TemplateBinding SelectedBackgroundBrush}" Data="F1 M 299.994,333.994 C 280.664,333.994 264.994,318.324 264.994,298.994 C 264.994,279.664 280.664,263.994 299.994,263.994 C 319.324,263.994 334.994,279.664 334.994,298.994 C 334.994,318.324 319.324,333.994 299.994,333.994 Z"/>
+
+                                    <TextBlock x:Name="PART_AMPM_Text" Text="AM" Canvas.Left="273" Canvas.Top="276" Foreground="{TemplateBinding SelectedForegroundBrush}" FontSize="32" FontWeight="Bold" />
+
+                                    <TextBlock x:Name="PART_05_Text" Text="05" Canvas.Left="412" Canvas.Top="44" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_10_Text" Text="10" Canvas.Left="507" Canvas.Top="141" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_15_Text" Text="15" Canvas.Left="543" Canvas.Top="274" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_20_Text" Text="20" Canvas.Left="508" Canvas.Top="406" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_25_Text" Text="25" Canvas.Left="412" Canvas.Top="504" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_30_Text" Text="30" Canvas.Left="279" Canvas.Top="539" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_35_Text" Text="35" Canvas.Left="147" Canvas.Top="504" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_40_Text" Text="40" Canvas.Left="49" Canvas.Top="407" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_45_Text" Text="45" Canvas.Left="13" Canvas.Top="274" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_50_Text" Text="50" Canvas.Left="49" Canvas.Top="142" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_55_Text" Text="55" Canvas.Left="146" Canvas.Top="45" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_00_Text" Text="00" Canvas.Left="279" Canvas.Top="8" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_12i_Text" Text="12" Canvas.Left="278" Canvas.Top="114" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_1i_Text" Text="1" Canvas.Left="368" Canvas.Top="135" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_2i_Text" Text="2" Canvas.Left="427" Canvas.Top="194" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_3i_Text" Text="3" Canvas.Left="449" Canvas.Top="274" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_4i_Text" Text="4" Canvas.Left="426" Canvas.Top="354" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_5i_Text" Text="5" Canvas.Left="369" Canvas.Top="412" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_6i_Text" Text="6" Canvas.Left="288" Canvas.Top="433" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_7i_Text" Text="7" Canvas.Left="210" Canvas.Top="413" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_8i_Text" Text="8" Canvas.Left="151" Canvas.Top="353" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_9i_Text" Text="9" Canvas.Left="130" Canvas.Top="274" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_10i_Text" Text="10" Canvas.Left="139" Canvas.Top="195" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <TextBlock x:Name="PART_11i_Text" Text="11" Canvas.Left="199" Canvas.Top="136" Foreground="{TemplateBinding UnSelectedForegroundBrush}" FontSize="36" FontWeight="Bold" />
+                                    <Path x:Name="PART_05_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 414.997,100.803 C 398.260,91.140 392.525,69.738 402.188,53.000 C 411.852,36.263 433.254,30.528 449.991,40.192 C 466.729,49.855 472.463,71.257 462.800,87.995 C 453.137,104.732 431.735,110.467 414.997,100.803 Z"/>
+                                    <Path x:Name="PART_35_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 149.997,559.797 C 133.260,550.133 127.525,528.731 137.188,511.994 C 146.852,495.256 168.254,489.522 184.991,499.185 C 201.729,508.848 207.463,530.251 197.800,546.988 C 188.137,563.725 166.735,569.460 149.997,559.797 Z"/>
+                                    <Path x:Name="PART_50_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 100.803,184.991 C 91.140,201.729 69.738,207.463 53.000,197.800 C 36.263,188.137 30.528,166.735 40.192,149.997 C 49.855,133.260 71.257,127.525 87.995,137.188 C 104.732,146.852 110.467,168.254 100.803,184.991 Z"/>
+                                    <Path x:Name="PART_20_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 559.797,449.991 C 550.133,466.729 528.731,472.463 511.994,462.800 C 495.256,453.137 489.522,431.735 499.185,414.997 C 508.848,398.260 530.251,392.525 546.988,402.188 C 563.725,411.852 569.460,433.254 559.797,449.991 Z"/>
+                                    <Path x:Name="PART_00_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 299.994,69.988 C 280.667,69.988 265.000,54.321 265.000,34.994 C 265.000,15.667 280.667,-0.000 299.994,-0.000 C 319.321,-0.000 334.988,15.667 334.988,34.994 C 334.988,54.321 319.321,69.988 299.994,69.988 Z"/>
+                                    <Path x:Name="PART_30_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 299.994,599.988 C 280.667,599.988 265.000,584.321 265.000,564.994 C 265.000,545.667 280.667,530.000 299.994,530.000 C 319.321,530.000 334.988,545.667 334.988,564.994 C 334.988,584.321 319.321,599.988 299.994,599.988 Z"/>
+                                    <Path x:Name="PART_45_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 69.988,299.994 C 69.988,319.321 54.321,334.988 34.994,334.988 C 15.667,334.988 -0.000,319.321 -0.000,299.994 C -0.000,280.667 15.667,265.000 34.994,265.000 C 54.321,265.000 69.988,280.667 69.988,299.994 Z"/>
+                                    <Path x:Name="PART_15_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 599.988,299.994 C 599.988,319.321 584.321,334.988 564.994,334.988 C 545.667,334.988 530.000,319.321 530.000,299.994 C 530.000,280.667 545.667,265.000 564.994,265.000 C 584.321,265.000 599.988,280.667 599.988,299.994 Z"/>
+                                    <Path x:Name="PART_55_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 184.991,100.803 C 168.254,110.467 146.852,104.732 137.188,87.995 C 127.525,71.257 133.260,49.855 149.997,40.192 C 166.735,30.528 188.137,36.263 197.800,53.000 C 207.463,69.738 201.729,91.140 184.991,100.803 Z"/>
+                                    <Path x:Name="PART_25_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 449.991,559.797 C 433.254,569.460 411.852,563.725 402.188,546.988 C 392.525,530.251 398.260,508.848 414.997,499.185 C 431.735,489.522 453.137,495.256 462.800,511.994 C 472.463,528.731 466.729,550.133 449.991,559.797 Z"/>
+                                    <Path x:Name="PART_40_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 100.803,414.997 C 110.467,431.735 104.732,453.137 87.995,462.800 C 71.257,472.463 49.855,466.729 40.192,449.991 C 30.528,433.254 36.263,411.852 53.000,402.188 C 69.738,392.525 91.140,398.260 100.803,414.997 Z"/>
+                                    <Path x:Name="PART_10_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 559.797,149.997 C 569.460,166.735 563.725,188.137 546.988,197.800 C 530.251,207.463 508.848,201.729 499.185,184.991 C 489.522,168.254 495.256,146.852 511.994,137.188 C 528.731,127.525 550.133,133.260 559.797,149.997 Z"/>
+                                    <Path x:Name="PART_12i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 299.994,175.994 C 280.664,175.994 264.994,160.324 264.994,140.994 C 264.994,121.664 280.664,105.994 299.994,105.994 C 319.324,105.994 334.994,121.664 334.994,140.994 C 334.994,160.324 319.324,175.994 299.994,175.994 Z"/>
+                                    <Path x:Name="PART_6i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 299.994,493.994 C 280.664,493.994 264.994,478.324 264.994,458.994 C 264.994,439.664 280.664,423.994 299.994,423.994 C 319.324,423.994 334.994,439.664 334.994,458.994 C 334.994,478.324 319.324,493.994 299.994,493.994 Z"/>
+                                    <Path x:Name="PART_9i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 175.994,299.994 C 175.994,319.324 160.324,334.994 140.994,334.994 C 121.664,334.994 105.994,319.324 105.994,299.994 C 105.994,280.664 121.664,264.994 140.994,264.994 C 160.324,264.994 175.994,280.664 175.994,299.994 Z"/>
+                                    <Path x:Name="PART_3i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 493.994,299.994 C 493.994,319.324 478.324,334.994 458.994,334.994 C 439.664,334.994 423.994,319.324 423.994,299.994 C 423.994,280.664 439.664,264.994 458.994,264.994 C 478.324,264.994 493.994,280.664 493.994,299.994 Z"/>
+                                    <Path x:Name="PART_11i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 237.994,192.607 C 221.254,202.272 199.848,196.536 190.183,179.796 C 180.518,163.056 186.254,141.650 202.994,131.985 C 219.734,122.320 241.140,128.056 250.805,144.796 C 260.470,161.536 254.734,182.942 237.994,192.607 Z"/>
+                                    <Path x:Name="PART_5i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 396.994,468.003 C 380.254,477.668 358.848,471.932 349.183,455.192 C 339.518,438.452 345.254,417.046 361.994,407.381 C 378.734,397.716 400.140,403.452 409.805,420.192 C 419.470,436.932 413.734,458.338 396.994,468.003 Z"/>
+                                    <Path x:Name="PART_8i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 192.607,361.994 C 202.272,378.734 196.536,400.140 179.796,409.805 C 163.056,419.470 141.650,413.734 131.985,396.994 C 122.320,380.254 128.056,358.848 144.796,349.183 C 161.536,339.518 182.942,345.254 192.607,361.994 Z"/>
+                                    <Path x:Name="PART_2i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 468.003,202.994 C 477.668,219.734 471.932,241.140 455.192,250.805 C 438.452,260.470 417.046,254.734 407.381,237.994 C 397.716,221.254 403.452,199.848 420.192,190.183 C 436.932,180.518 458.338,186.254 468.003,202.994 Z"/>
+                                    <Path x:Name="PART_10i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 192.607,237.994 C 182.942,254.734 161.536,260.470 144.796,250.805 C 128.056,241.140 122.320,219.734 131.985,202.994 C 141.650,186.254 163.056,180.518 179.796,190.183 C 196.536,199.848 202.272,221.254 192.607,237.994 Z"/>
+                                    <Path x:Name="PART_4i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 468.003,396.994 C 458.338,413.734 436.932,419.470 420.192,409.805 C 403.452,400.140 397.716,378.734 407.381,361.994 C 417.046,345.254 438.452,339.518 455.192,349.183 C 471.932,358.848 477.668,380.254 468.003,396.994 Z"/>
+                                    <Path x:Name="PART_7i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 237.994,407.381 C 254.734,417.046 260.470,438.452 250.805,455.192 C 241.140,471.932 219.734,477.668 202.994,468.003 C 186.254,458.338 180.518,436.932 190.183,420.192 C 199.848,403.452 221.254,397.716 237.994,407.381 Z"/>
+                                    <Path x:Name="PART_1i_Front" StrokeThickness="1.0" StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 396.994,131.985 C 413.734,141.650 419.470,163.056 409.805,179.796 C 400.140,196.536 378.734,202.272 361.994,192.607 C 345.254,182.942 339.518,161.536 349.183,144.796 C 358.848,128.056 380.254,122.320 396.994,131.985 Z"/>
+
+                                    <Path x:Name="PART_AMPM_Front" StrokeThickness="1.0"  StrokeMiterLimit="1.0" Fill="Transparent" Data="F1 M 299.994,333.994 C 280.664,333.994 264.994,318.324 264.994,298.994 C 264.994,279.664 280.664,263.994 299.994,263.994 C 319.324,263.994 334.994,279.664 334.994,298.994 C 334.994,318.324 319.324,333.994 299.994,333.994 Z"/>
+                                </Canvas>
+                            </Canvas>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
