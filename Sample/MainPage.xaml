@@ -7,13 +7,36 @@
     xmlns:tp="using:DeanChalk.UWP.TimePicker"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Grid>
-        <Grid.Background>
-            <ImageBrush/>
-        </Grid.Background>
-        <tp:TimePicker
-            HorizontalAlignment="Center"  
-            VerticalAlignment="Center" />
+        <Grid HorizontalAlignment="Center"  
+              VerticalAlignment="Center"
+              Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock 
+                Text="Custom Radial TimePicker" 
+                Style="{StaticResource SubtitleTextBlockStyle}"/>
+
+            <!-- Custom TimePicker -->
+            <tp:TimePicker
+                Grid.Row="1"
+                Time="{x:Bind SelectedTime, Mode=TwoWay}"/>
+
+            <TextBlock 
+                Grid.Row="2"
+                Text="Standard UWP TimePicker" 
+                Margin="0,20,0,0"
+                Style="{StaticResource SubtitleTextBlockStyle}"/>
+
+            <!-- Standard UWP TimePicker for comparison -->
+            <TimePicker
+                Grid.Row="3" 
+                Time="{x:Bind SelectedTime, Mode=TwoWay}"/>
+        </Grid>
     </Grid>
 </Page>

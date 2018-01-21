@@ -86,6 +86,7 @@ namespace DeanChalk.UWP.TimePicker
     [TemplatePart(Name = _p_AMPM_Text, Type = (typeof(TextBlock)))]
     public sealed partial class TimePicker : Control
     {
+        private bool _hasAppliedTemplate;
         private const string _p_00_Back = "PART_00_Back";
         private const string _p_05_Back = "PART_05_Back";
         private const string _p_10_Back = "PART_10_Back";
@@ -338,31 +339,31 @@ namespace DeanChalk.UWP.TimePicker
             _p_AMPM_TextBlock = GetTemplateChild(_p_AMPM_Text) as TextBlock;
 
 
-            _minuteNumberControls.Add(_p_00_Front_Path, new NumberControl { BackgroundCircle = _p_00_Back_Path, ForegroundCircle = _p_00_Front_Path, TextBlock = _p_00_TextBlock });
-            _minuteNumberControls.Add(_p_05_Front_Path, new NumberControl { BackgroundCircle = _p_05_Back_Path, ForegroundCircle = _p_05_Front_Path, TextBlock = _p_05_TextBlock });
-            _minuteNumberControls.Add(_p_10_Front_Path, new NumberControl { BackgroundCircle = _p_10_Back_Path, ForegroundCircle = _p_10_Front_Path, TextBlock = _p_10_TextBlock });
-            _minuteNumberControls.Add(_p_15_Front_Path, new NumberControl { BackgroundCircle = _p_15_Back_Path, ForegroundCircle = _p_15_Front_Path, TextBlock = _p_15_TextBlock });
-            _minuteNumberControls.Add(_p_20_Front_Path, new NumberControl { BackgroundCircle = _p_20_Back_Path, ForegroundCircle = _p_20_Front_Path, TextBlock = _p_20_TextBlock });
-            _minuteNumberControls.Add(_p_25_Front_Path, new NumberControl { BackgroundCircle = _p_25_Back_Path, ForegroundCircle = _p_25_Front_Path, TextBlock = _p_25_TextBlock });
-            _minuteNumberControls.Add(_p_30_Front_Path, new NumberControl { BackgroundCircle = _p_30_Back_Path, ForegroundCircle = _p_30_Front_Path, TextBlock = _p_30_TextBlock });
-            _minuteNumberControls.Add(_p_35_Front_Path, new NumberControl { BackgroundCircle = _p_35_Back_Path, ForegroundCircle = _p_35_Front_Path, TextBlock = _p_35_TextBlock });
-            _minuteNumberControls.Add(_p_40_Front_Path, new NumberControl { BackgroundCircle = _p_40_Back_Path, ForegroundCircle = _p_40_Front_Path, TextBlock = _p_40_TextBlock });
-            _minuteNumberControls.Add(_p_45_Front_Path, new NumberControl { BackgroundCircle = _p_45_Back_Path, ForegroundCircle = _p_45_Front_Path, TextBlock = _p_45_TextBlock });
-            _minuteNumberControls.Add(_p_50_Front_Path, new NumberControl { BackgroundCircle = _p_50_Back_Path, ForegroundCircle = _p_50_Front_Path, TextBlock = _p_50_TextBlock });
-            _minuteNumberControls.Add(_p_55_Front_Path, new NumberControl { BackgroundCircle = _p_55_Back_Path, ForegroundCircle = _p_55_Front_Path, TextBlock = _p_55_TextBlock });
+            _minuteNumberControls.Add(_p_00_Front_Path, new NumberControl { BackgroundCircle = _p_00_Back_Path, ForegroundCircle = _p_00_Front_Path, TextBlock = _p_00_TextBlock, Value = 0});
+            _minuteNumberControls.Add(_p_05_Front_Path, new NumberControl { BackgroundCircle = _p_05_Back_Path, ForegroundCircle = _p_05_Front_Path, TextBlock = _p_05_TextBlock, Value = 5});
+            _minuteNumberControls.Add(_p_10_Front_Path, new NumberControl { BackgroundCircle = _p_10_Back_Path, ForegroundCircle = _p_10_Front_Path, TextBlock = _p_10_TextBlock, Value = 10});
+            _minuteNumberControls.Add(_p_15_Front_Path, new NumberControl { BackgroundCircle = _p_15_Back_Path, ForegroundCircle = _p_15_Front_Path, TextBlock = _p_15_TextBlock, Value = 15});
+            _minuteNumberControls.Add(_p_20_Front_Path, new NumberControl { BackgroundCircle = _p_20_Back_Path, ForegroundCircle = _p_20_Front_Path, TextBlock = _p_20_TextBlock, Value = 20});
+            _minuteNumberControls.Add(_p_25_Front_Path, new NumberControl { BackgroundCircle = _p_25_Back_Path, ForegroundCircle = _p_25_Front_Path, TextBlock = _p_25_TextBlock , Value = 25});
+            _minuteNumberControls.Add(_p_30_Front_Path, new NumberControl { BackgroundCircle = _p_30_Back_Path, ForegroundCircle = _p_30_Front_Path, TextBlock = _p_30_TextBlock , Value = 30});
+            _minuteNumberControls.Add(_p_35_Front_Path, new NumberControl { BackgroundCircle = _p_35_Back_Path, ForegroundCircle = _p_35_Front_Path, TextBlock = _p_35_TextBlock, Value = 35});
+            _minuteNumberControls.Add(_p_40_Front_Path, new NumberControl { BackgroundCircle = _p_40_Back_Path, ForegroundCircle = _p_40_Front_Path, TextBlock = _p_40_TextBlock, Value = 40});
+            _minuteNumberControls.Add(_p_45_Front_Path, new NumberControl { BackgroundCircle = _p_45_Back_Path, ForegroundCircle = _p_45_Front_Path, TextBlock = _p_45_TextBlock, Value = 45});
+            _minuteNumberControls.Add(_p_50_Front_Path, new NumberControl { BackgroundCircle = _p_50_Back_Path, ForegroundCircle = _p_50_Front_Path, TextBlock = _p_50_TextBlock, Value = 50});
+            _minuteNumberControls.Add(_p_55_Front_Path, new NumberControl { BackgroundCircle = _p_55_Back_Path, ForegroundCircle = _p_55_Front_Path, TextBlock = _p_55_TextBlock, Value = 55});
 
-            _hourNumberControls.Add(_p_1i_Front_Path, new NumberControl { BackgroundCircle = _p_1i_Back_Path, ForegroundCircle = _p_1i_Front_Path, TextBlock = _p_1i_TextBlock });
-            _hourNumberControls.Add(_p_2i_Front_Path, new NumberControl { BackgroundCircle = _p_2i_Back_Path, ForegroundCircle = _p_2i_Front_Path, TextBlock = _p_2i_TextBlock });
-            _hourNumberControls.Add(_p_3i_Front_Path, new NumberControl { BackgroundCircle = _p_3i_Back_Path, ForegroundCircle = _p_3i_Front_Path, TextBlock = _p_3i_TextBlock });
-            _hourNumberControls.Add(_p_4i_Front_Path, new NumberControl { BackgroundCircle = _p_4i_Back_Path, ForegroundCircle = _p_4i_Front_Path, TextBlock = _p_4i_TextBlock });
-            _hourNumberControls.Add(_p_5i_Front_Path, new NumberControl { BackgroundCircle = _p_5i_Back_Path, ForegroundCircle = _p_5i_Front_Path, TextBlock = _p_5i_TextBlock });
-            _hourNumberControls.Add(_p_6i_Front_Path, new NumberControl { BackgroundCircle = _p_6i_Back_Path, ForegroundCircle = _p_6i_Front_Path, TextBlock = _p_6i_TextBlock });
-            _hourNumberControls.Add(_p_7i_Front_Path, new NumberControl { BackgroundCircle = _p_7i_Back_Path, ForegroundCircle = _p_7i_Front_Path, TextBlock = _p_7i_TextBlock });
-            _hourNumberControls.Add(_p_8i_Front_Path, new NumberControl { BackgroundCircle = _p_8i_Back_Path, ForegroundCircle = _p_8i_Front_Path, TextBlock = _p_8i_TextBlock });
-            _hourNumberControls.Add(_p_9i_Front_Path, new NumberControl { BackgroundCircle = _p_9i_Back_Path, ForegroundCircle = _p_9i_Front_Path, TextBlock = _p_9i_TextBlock });
-            _hourNumberControls.Add(_p_10i_Front_Path, new NumberControl { BackgroundCircle = _p_10i_Back_Path, ForegroundCircle = _p_10i_Front_Path, TextBlock = _p_10i_TextBlock });
-            _hourNumberControls.Add(_p_11i_Front_Path, new NumberControl { BackgroundCircle = _p_11i_Back_Path, ForegroundCircle = _p_11i_Front_Path, TextBlock = _p_11i_TextBlock });
-            _hourNumberControls.Add(_p_12i_Front_Path, new NumberControl { BackgroundCircle = _p_12i_Back_Path, ForegroundCircle = _p_12i_Front_Path, TextBlock = _p_12i_TextBlock });
+            _hourNumberControls.Add(_p_1i_Front_Path, new NumberControl { BackgroundCircle = _p_1i_Back_Path, ForegroundCircle = _p_1i_Front_Path, TextBlock = _p_1i_TextBlock, Value = 1});
+            _hourNumberControls.Add(_p_2i_Front_Path, new NumberControl { BackgroundCircle = _p_2i_Back_Path, ForegroundCircle = _p_2i_Front_Path, TextBlock = _p_2i_TextBlock, Value = 2});
+            _hourNumberControls.Add(_p_3i_Front_Path, new NumberControl { BackgroundCircle = _p_3i_Back_Path, ForegroundCircle = _p_3i_Front_Path, TextBlock = _p_3i_TextBlock, Value = 3});
+            _hourNumberControls.Add(_p_4i_Front_Path, new NumberControl { BackgroundCircle = _p_4i_Back_Path, ForegroundCircle = _p_4i_Front_Path, TextBlock = _p_4i_TextBlock, Value = 4});
+            _hourNumberControls.Add(_p_5i_Front_Path, new NumberControl { BackgroundCircle = _p_5i_Back_Path, ForegroundCircle = _p_5i_Front_Path, TextBlock = _p_5i_TextBlock , Value = 5});
+            _hourNumberControls.Add(_p_6i_Front_Path, new NumberControl { BackgroundCircle = _p_6i_Back_Path, ForegroundCircle = _p_6i_Front_Path, TextBlock = _p_6i_TextBlock, Value = 6});
+            _hourNumberControls.Add(_p_7i_Front_Path, new NumberControl { BackgroundCircle = _p_7i_Back_Path, ForegroundCircle = _p_7i_Front_Path, TextBlock = _p_7i_TextBlock, Value = 7});
+            _hourNumberControls.Add(_p_8i_Front_Path, new NumberControl { BackgroundCircle = _p_8i_Back_Path, ForegroundCircle = _p_8i_Front_Path, TextBlock = _p_8i_TextBlock, Value = 8});
+            _hourNumberControls.Add(_p_9i_Front_Path, new NumberControl { BackgroundCircle = _p_9i_Back_Path, ForegroundCircle = _p_9i_Front_Path, TextBlock = _p_9i_TextBlock , Value = 9});
+            _hourNumberControls.Add(_p_10i_Front_Path, new NumberControl { BackgroundCircle = _p_10i_Back_Path, ForegroundCircle = _p_10i_Front_Path, TextBlock = _p_10i_TextBlock, Value = 10});
+            _hourNumberControls.Add(_p_11i_Front_Path, new NumberControl { BackgroundCircle = _p_11i_Back_Path, ForegroundCircle = _p_11i_Front_Path, TextBlock = _p_11i_TextBlock, Value = 11});
+            _hourNumberControls.Add(_p_12i_Front_Path, new NumberControl { BackgroundCircle = _p_12i_Back_Path, ForegroundCircle = _p_12i_Front_Path, TextBlock = _p_12i_TextBlock , Value = 12});
 
             foreach (var path in _minuteNumberControls.Keys)
             {
@@ -375,6 +376,8 @@ namespace DeanChalk.UWP.TimePicker
             }
 
             _p_AMPM_Front_Path.Tapped += OnAmPmTapped;
+            _hasAppliedTemplate = true;
+            ChangeControlsFromNewTime();
         }
     }
 }
