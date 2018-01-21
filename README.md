@@ -18,7 +18,7 @@ This brush by default is set to the standard foreground theme brush for the appl
 
 ### `UnSelectedForegroundBrush`
 
-This brush by default is set to the standard background theme brush for the application, but can be set to any brush in your code. This brush paints the foreground text of any dial elements that ARE selected. This should be contrasted to the 'UnSelectedForegroundBrush' visually.
+This brush by default is set to the standard background theme brush for the application, but can be set to any brush in your code. This brush paints the foreground text of any dial elements that ARE selected. This should be contrasted to the `UnSelectedForegroundBrush` visually.
 
 ### `Time`
 
